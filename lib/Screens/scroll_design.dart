@@ -23,9 +23,19 @@ class MainContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [],
+    const textStyle = TextStyle(
+        fontSize: 50, fontWeight: FontWeight.bold, color: Colors.white);
+    return SafeArea(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text('11°', style: textStyle),
+          Text('Miércoles', style: textStyle),
+          Expanded(child: Container()),
+          Icon(Icons.keyboard_arrow_down, size: 100, color: Colors.white)
+        ],
+      ),
     );
   }
 }
