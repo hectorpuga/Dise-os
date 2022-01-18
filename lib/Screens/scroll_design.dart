@@ -7,16 +7,16 @@ class ScrollScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           gradient: LinearGradient(
               end: Alignment.bottomCenter,
               begin: Alignment.topCenter,
               colors: [Color(0xff5EE8C5), Color(0xff30BAD6)],
               stops: [0.5, 0.5])),
       child: PageView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.vertical,
-        children: [Page1(), Page2()],
+        children: const [Page1(), Page2()],
       ),
     ));
   }
